@@ -26,7 +26,7 @@ movies_dict = pickle.load((open('movies_dict.pkl', 'rb')))
 movies = pd.DataFrame(movies_dict)
 st.title('Movie Recommender System')
 selected_movie_name = st.selectbox(
-    'How would you like to be contacted?',
+    'Select you favorite move:',
     movies['title'].values
 )
 
